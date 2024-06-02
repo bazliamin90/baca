@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Bazli</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/audiostyle.css">
+    <link rel="icon" type="image/png" href="assets/images/baz.png" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/player.js"></script>
+    <script src="assets/js/header.js"></script>
+
+</head>
+
+<body>
+
+<header-component></header-component>
+    
+    <header>
+        <h1>Nota</h1>
+    </header>
+
+    <main>
+
+<details>
+    <summary id="bgmax">Mad</summary>
+
+    <table>
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">1. Asli (2 harakat)</th>
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center><button id="green">Huruf berbaris (selain hamzah)</button> +
+			<button id="blue">Huruf mad</button></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/alkahfi18-8.png" class="ro" id="ro">
+			<p><center>Al-Kahfi: 8</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio preload="auto" class="listen" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/alkahfi-8.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">2. Lin (2/4/6 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf baris atas</button> +
+			<button id="blue">Huruf mad</button> + 
+			<button id="red">Huruf mati waqaf</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/albalad90-10.png" class="ro" id="ro">
+			<p><center>Al-Balad: 10</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/albalad-10.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">3. 'Aridh Lissukun (6/4/2 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf berbaris (ikut huruf mad)</button> +
+			<button id="blue">Huruf mad</button> + 
+			<button id="red">Huruf mati waqaf</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/alfajr89-17.png" class="ro" id="ro">
+			<p><center>Al-Fajr: 17</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/alfajr-17.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">4. Silah Thowilah (4/5 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Ha dhomir</button> +
+			<button id="blue">Huruf ya kecil</button> + 
+			<button id="red">Hamzah</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/almuthoffifin83-12.png" class="ro" id="ro">
+			<p><center>Al-Muthoffifin: 12</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/almuthoffifin-12.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Ha dhomir</button> +
+			<button id="blue">Huruf wau kecil</button> + 
+			<button id="red">Hamzah</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/albaqarah2-131.png" class="ro" id="ro">
+			<p><center>Al-Baqarah: 131</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/albaqarah-131.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">5. Silah Qasirah (2 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Ha dhomir</button> +
+			<button id="blue">Huruf ya kecil</button> + 
+			<button id="red">Huruf selain hamzah</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/aladiyat100-6.png" class="ro" id="ro">
+			<p><center>Al-'Adiyat: 6</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/aladiyat-6.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Ha dhomir</button> +
+			<button id="blue">Huruf wau kecil</button> + 
+			<button id="red">Huruf selain hamzah</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan=1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/almasad111-4.png" class="ro" id="ro">
+			<p><center>Al-Masad: 4</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/almasad-4.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">6. Badal (2 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Hamzah berbaris</button> +
+			<button id="blue">Huruf mad</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/albaqarah2-53.png" class="ro" id="ro">
+			<p><center>Al-Baqarah: 53</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/albaqarah-53.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/annur24-37-a.png" class="ro" id="ro">
+			<img src="./assets/images/annur24-37-b.png" class="ro" id="ro">
+			<p><center>An-Nur: 37</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/annur-37.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/albayyinah98-4.png" class="ro" id="ro">
+			<p><center>Al-Bayyinah: 4</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/albayyinah-4.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/alahqaf46-4-a.png" class="ro" id="ro">
+			<img src="./assets/images/alahqaf46-4-b.png" class="ro" id="ro">
+			<img src="./assets/images/alahqaf46-4-c.png" class="ro" id="ro">
+			<p><center>Al-Ahqaf: 4</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/alahqaf-4.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">7. Lazim Kalimi Mukhaffaf (6 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf mad</button> +
+			<button id="blue">Huruf sukun asli (tiada idgham)</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/yunus10-51.png" class="ro" id="ro">
+			<p><center>Yunus: 51</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/yunus-51.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/yunus10-91.png" class="ro" id="ro">
+			<p><center>Yunus: 91</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/yunus-91.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">8. Lazim Kalimi Muthaqqal (6 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf mad</button> +
+			<button id="blue">Huruf sukun asli (ada idgham)</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/alfatihah1-7-a.png" class="ro" id="ro">
+			<img src="./assets/images/alfatihah1-7-b.png" class="ro" id="ro">
+			<p><center>Al-Fatihah: 7</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/alfatihah-7.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/azzumar39-64.png" class="ro" id="ro">
+			<p><center>Az-Zumar: 64</center></p>
+			</td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/azzumar-64.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">9. Lazim Harfi Mukhaffaf (6 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf mad</button> +
+			<button id="blue">Huruf sukun asli (tiada idgham)</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/yunus10-1.png" class="ro" id="ro">
+			<p><center>Yunus: 1</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/yunus-1.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<p style="line-height:1.5 ; text-align: left">Bagi contoh di atas, cara ejaan huruf <b>Lam</b> ialah:</p>
+			<button id="green">Lam</button> +
+			<button id="blue">Alif</button> + 
+			<button id="red">Mim mati</button>
+			<p style="line-height:1.5 ; text-align: left">➤ Ada huruf mad (alif) bertemu dengan huruf mati (mim).</p>
+			<p style="line-height:1.5 ; text-align: left">➤ Mad lazim harfi berlaku pada huruf <b>muqatto'ah</b>, di permulaan surah.</p>
+			</center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">10. Lazim Harfi Muthaqqal (6 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf mad</button> +
+			<button id="blue">Huruf sukun asli (ada idgham)</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/asysyuara26-1.png" class="ro" id="ro">
+			<p><center>Asy-Syu'ara': 1</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/asysyuara-1.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<p style="line-height:1.5 ; text-align: left">Bagi contoh di atas, cara ejaan huruf <b>Sin</b> ialah:</p>
+			<button id="green">Sin</button> +
+			<button id="blue">Ya</button> + 
+			<button id="red">Nun mati</button>
+			<p style="line-height:1.5 ; text-align: left">➤ Ada huruf mad (Ya) bertemu dengan huruf mati (nun).</p>
+			<p style="line-height:1.5 ; text-align: left">➤ Nun mati tersebut bertemu pula dengan huruf <b>mim</b> selepasnya, maka terjadi idgham bighunnah (dengung 2 harakat).</p>
+			<p style="line-height:1.5 ; text-align: left">➤ Mad lazim harfi berlaku pada huruf <b>muqatto'ah</b>, di permulaan surah.</p>
+			</center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">11. Wajib Muttasil (4/5 harakat. 6 harakat jika waqaf)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf mad</button> +
+			<button id="blue">Hamzah (dalam kalimah sama)</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/annaba78-36.png" class="ro" id="ro">
+			<p><center>An-Naba': 36</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/annaba-36.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">12. Jaiz Munfasil (4/5 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf mad</button> +
+			<button id="blue">Hamzah (dalam kalimah seterusnya)</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/annaziat79-18.png" class="ro" id="ro">
+			<p><center>An-Nazi'at: 18</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/annaziat-18.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">13. Tamkin (2 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Huruf mad</button> +
+			<button id="blue">Huruf sama dengannya)</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/annas114-5.png" class="ro" id="ro">
+			<p><center>An-Nas: 5</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/annas-5.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/aliimran3-200-a.png" class="ro" id="ro">
+			<img src="./assets/images/aliimran3-200-b.png" class="ro" id="ro">
+			<p><center>Ali 'Imran: 200</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/aliimran-200.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<p style="line-height:1.5 ; text-align: left">Dinamakan juga mad tamkin pada keadaan berikut:</p>
+			<button id="green">Huruf ya bersabdu baris bawah</button> +
+			<button id="blue">Huruf ya kecil (mad)</button>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/aliimran3-80-a.png" class="ro" id="ro">
+			<img src="./assets/images/aliimran3-80-b.png" class="ro" id="ro">
+			<p><center>Ali 'Imran: 80</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/aliimran-80.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+		
+		<tr>
+			<th colspan="2" class="stick" id="thmini1" style="border-left: none;border-right: none">14. 'Iwad (2 harakat)</th>		
+		</tr>
+		<tr>
+			<td colspan="2" style="line-height: 3.5;border-left: none;border-right: none">
+			<center>
+			<button id="green">Waqaf pada huruf baris dua di atas</button>
+			<p style="line-height:1.5">(kecuali ta marbuthah)</p>
+			</center>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/annisak-1a.jpeg" class="ro" id="ro" style="height:1.5rem">
+			<img src="./assets/images/annisak-1b.jpeg" class="ro" id="ro" style="height:1.5rem">
+			<img src="./assets/images/annisak-1c.jpeg" class="ro" id="ro" style="height:1.5rem">
+			<p><center>An-Nisa': 1</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/annisa-1.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+			<tr>
+			<td colspan="1" class="secrow" id="secrow" style="border-left: none">
+			<img src="./assets/images/aladiyat-1.jpeg" class="ro" id="ro">
+			<p><center>Al-'Adiyat: 1</center></p></td>
+			<td rowspan="1" style="border-right: none">
+				<center><div class="mediPlayer">
+					<audio class="listen" preload="auto" data-size="30" src="https://github.com/bazliamin90/audio/raw/main/aladiyat-1.mp3"></audio>
+				</div></center>
+			</td>
+		</tr>
+	</table>
+
+</details>
+
+<details>
+    <summary id="bgmax">Ro: Tebal & Nipis</summary>
+    <p>Catatan:</p>
+
+    <ol>
+        <li>Tebal = Tafkhim.</li>
+        <li>Nipis = Tarqiq.</li>
+    </ol>
+	<hr>
+	<h4><center>a) Ro tebal sentiasa</center></h4>
+	
+	<table>
+		<tr>
+			<th class="stick" id="thmini1" style="border-left: none">Ro tebal sentiasa</th>		
+			<th class="stick"id="thmini1" style="border-right: none">Contoh</th>
+		</tr>
+		<tr>
+			<td rowspan="1" style="border-left: none">1. Baris atas</td>
+			<td style="border-right: none"><img src="./assets/images/1.jpeg" class="ro" id="ro">
+			<p><center>Al-Baqarah: 157</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">2. Baris depan</td>
+			<td style="border-right: none"><img src="./assets/images/2.jpeg" class="ro" id="ro">
+			<p><center>Al-Baqarah: 25</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">3. Sukun, sebelumnya baris atas</td>
+			<td style="border-right: none"><img src="./assets/images/3.jpeg" class="ro" id="ro">
+			<p><center>Al-Baqarah: 29</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">4. Sukun, sebelumnya baris depan</td>
+			<td style="border-right: none"><img src="./assets/images/4.jpeg" class="ro" id="ro">
+			<p><center>Al-Baqarah: 28</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1"  style="border-left: none">5. Dimatikan, sebelumnya <span style="color:blue">alif mad</span>, sebelumnya baris <span style="color:red">atas</span></td>
+			<td style="border-right: none"><img src="./assets/images/5.jpeg" class="ro" id="ro">
+			<p><center>Al-Baqarah: 25</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">6. Dimatikan, sebelumnya <span style="color:blue">wau mad</span>, sebelumnya baris <span style="color:red">depan</span></td>
+			<td style="border-right: none"><img src="./assets/images/6.jpeg" class="ro" id="ro">
+			<p><center>Ali 'Imran: 154</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">7. Dimatikan, sebelumnya <span style="color:blue">sukun</span>, sebelumnya baris <span style="color:red">atas</span></td>
+			<td style="border-right: none"><img src="./assets/images/7.jpeg" class="ro" id="ro">
+			<p><center>Al-'Asr: 1</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left:none">8. Dimatikan, sebelumnya <span style="color:blue">sukun</span>, sebelumnya baris <span style="color:red">depan</span></td>
+			<td style="border-right: none"><img src="./assets/images/8.jpeg" class="ro" id="ro">
+			<p><center>Al-'Asr: 2</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">9. Sukun, sebelumnya baris <span style="color:blue">bawah</span>, bertemu <span style="color:red">huruf isti'la'</span> dalam <u>satu kalimah</u>
+			<br><br><img src="./assets/images/ist.png" class="ro" id="ro"></td>
+			<td style="border-right: none">
+			<img src="./assets/images/9a.jpeg" class="ro" id="ro">
+			<p><center>At-Taubah: 122</center></p>
+			<br><img src="./assets/images/9b.jpeg" class="ro" id="ro">
+			<p><center>Al-Fajr: 14</center></p>
+			<br><img src="./assets/images/9c.jpeg" class="ro" id="ro">
+			<p><center>Al-An'am: 7</center></p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">10. Sukun, sebelumnya <span style="color:blue">hamzah wasal</span></td>
+			<td style="border-right: none"><img src="./assets/images/10.jpeg" class="ro" id="ro">
+			<p><center>Al-Fajr: 28</center></p></td>
+		</tr>
+	</table>
+	
+	<br><hr>
+	<h4><center>b) Ro nipis sentiasa</center></h4>
+	
+	<table>
+		<tr>
+			<th class="stick" id="thmini1" style="border-left: none">Ro nipis sentiasa</th>		
+			<th class="stick" id="thmini1" style="border-right: none">Contoh</th>
+		</tr>
+		<tr>
+			<td rowspan="1" style="border-left: none">1. Baris bawah</td>
+			<td style="border-right: none"><img src="./assets/images/n1.jpeg" class="ro" id="ro">
+			<p><center>Al-Fajr: 17</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">2. Sukun, sebelumnya baris bawah</td>
+			<td style="border-right: none"><img src="./assets/images/n2.jpeg" class="ro" id="ro">
+			<p><center>Al-Fajr: 10</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">3. Dimatikan, sebelumnya <span style="color:blue">sukun</span>, sebelumnya baris <span style="color:red">bawah</span></td>
+			<td style="border-right: none"><img src="./assets/images/n3.jpeg" class="ro" id="ro">
+			<p><center>Al-Fajr: 5</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">4. Dimatikan, sebelumnya <span style="color:blue">ya mad</span>, sebelumnya baris <span style="color:red">atas</span></td>
+			<td style="border-right: none"><img src="./assets/images/n4.jpeg" class="ro" id="ro">
+			<p><center>An-Nisa': 128</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">5. Dimatikan, sebelumnya <span style="color:blue">ya mad</span>, sebelumnya baris <span style="color:red">bawah</span></td>
+			<td style="border-right: none"><img src="./assets/images/n5.jpeg" class="ro" id="ro">
+			<p><center>Ali 'Imran: 156</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">6. Sukun, sebelumnya baris <span style="color:blue">bawah</span>, bertemu <span style="color:red">huruf isti'la'</span> dalam <u>kalimah selepasnya</u>
+			<br><br><img src="./assets/images/ist.png" class="ro" id="ro"></td>
+			<td style="border-right: none"><img src="./assets/images/n6.jpeg" class="ro" id="ro">
+			<p><center>Nuh: 1</center></p>
+			</td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">7. Imalah (seperti menyebut <span style="color:blue">X-ray</span>)</td>
+			<td style="border-right: none"><img src="./assets/images/n7.jpeg" class="ro" id="ro">
+			<p><center>Hud: 41</center></p></td>
+		</tr>
+	</table>
+	
+	<br><hr>
+	<h4><center>c) Ro yang lebih utama ditebalkan</center></h4>
+	
+	<table>
+		<tr>
+			<th class="stick" id="thmini1" style="border-left: none">Ro yang lebih utama ditebalkan</th>		
+			<th class="stick" id="thmini1" style="border-right: none">Contoh</th>
+		</tr>
+		<tr>
+			<td rowspan="1" style="border-left: none">1. Baris atas yang dimatikan, sebelumnya <span style="color:blue">huruf isti'la' sukun</span>, sebelumnya baris <span style="color:red">bawah</span>
+			<br><br><img src="./assets/images/ist.png" class="ro" id="ro"></td>
+			<td style="border-right: none"><img src="./assets/images/tu1.jpeg" class="ro" id="ro">
+			<p><center>Yunus: 87</center></p></td>
+		</tr>
+		
+	</table>
+	
+	<br><hr>
+	<h4><center>d) Ro yang lebih utama dinipiskan</center></h4>
+	
+	<table>
+		<tr>
+			<th class="stick" id="thmini1" style="border-left: none">Ro yang lebih utama dinipiskan</th>		
+			<th class="stick" id="thmini1" style="border-right: none">Contoh</th>
+		</tr>
+		<tr>
+			<td rowspan="1" style="border-left: none">1. Sukun, sebelumnya baris <span style="color:blue">bawah</span>, bertemu <span style="color:red">huruf isti'la' baris bawah</span>
+			<br><br><img src="./assets/images/ist.png" class="ro" id="ro"></td>
+			<td style="border-right: none"><img src="./assets/images/nu1.jpeg" class="ro" id="ro">
+			<p><center>Asy-Syu'ara': 63</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">2. Dimatikan, sebelumnya <span style="color:blue">huruf isti'la' sukun</span>, sebelumnya <span style="color:red">baris bawah</span>
+			<br><br><img src="./assets/images/ist.png" class="ro" id="ro"></td>
+			<td style="border-right: none"><img src="./assets/images/nu2.jpeg" class="ro" id="ro">
+			<p><center>Saba': 12</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">3. Dimatikan, sebelumnya <span style="color:blue">sukun</span>, sebelumnya <span style="color:red">baris atas</span>, selepasnya huruf <span style="color:green">ya hazaf</span></td>
+			<td style="border-right: none"><img src="./assets/images/nu3.jpeg" class="ro" id="ro">
+			<p><center>Hud: 81</center></p>
+			<br><img src="./assets/images/nu3b.jpeg" class="ro" id="ro">
+			<p><center>Al-Fajr: 4</center></p></td>
+		</tr>
+		
+		<tr>
+			<td rowspan="1" style="border-left: none">4. Dimatikan, sebelumnya <span style="color:blue">baris depan</span>, selepasnya huruf <span style="color:green">ya hazaf</span></td>
+			<td style="border-right: none"><img src="./assets/images/nu4.jpeg" class="ro" id="ro">
+			<p><center>Al-Qamar: 16</center></p></td>
+		</tr>
+	</table>
+</details>
+
+<details>
+    <summary id="bgmax">Sifat huruf</summary>
+    <p>Catatan:</p>
+
+    <ol>
+        <li>Definisi: Cara keluar huruf.</li>
+        <li>Ada sifat berlawanan (berpasangan), ada yang tunggal.</li>
+    </ol>
+	<table>
+		<tr>
+			<th id="thmini1" style="border-left: none">Kategori</th>		
+			<th id="thmini1">Sifat</th>
+			<th id="thmini1">Huruf</th>
+			<th id="thmini1" style="border-right: none">Cara</th>
+		</tr>
+		<tr>
+			<td rowspan="2" style="border-left: none">a. Udara</td>
+			<td>1. Jahr</td>
+			<td>18</td>
+			<td style="border-right: none">Tertahan</td>
+		</tr>
+		<tr>
+			<td>2. Hams</td>
+			<td>10</td>
+			<td style="border-right: none">Terlepas</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="border-left: none">b. Suara</td>
+			<td>3. Syiddah</td>
+			<td>8</td>
+			<td style="border-right: none">Tertahan</td>
+		</tr>
+		<tr>
+			<td>4. Tawassut</td>
+			<td>5</td>
+			<td style="border-right: none">Pertengahan</td>
+		</tr>
+		<tr>
+			<td>5. Rakhawah</td>
+			<td>16</td>
+			<td style="border-right: none">Terlepas</td>
+		</tr>
+		<tr>
+			<td rowspan="2" style="border-left: none">c. Lidah</td>
+			<td>6. Isti'lak</td>
+			<td>7</td>
+			<td style="border-right: none">Terangkat pangkal lidah</td>
+		</tr>
+		<tr>
+			<td>7. Istifal</td>
+			<td>21</td>
+			<td style="border-right: none">Tak terangkat</td>
+		</tr>
+                <tr>
+			<td rowspan="2" style="border-left: none">d. Lidah</td>
+			<td>8. Itbaq</td>
+			<td>4</td>
+			<td style="border-right: none">Terangkat tengah lidah ke langit²</td>
+		</tr>
+		<tr>
+			<td>9. Infitah</td>
+			<td>25</td>
+			<td style="border-right: none">Tak terangkat</td>
+		</tr>
+                <tr>
+			<td rowspan="2" style="border-left: none">e. Keringanan sebutan</td>
+			<td>10. Izlaq</td>
+			<td>6</td>
+			<td style="border-right: none">Ringan diucapkan (hujung lidah/bibir)</td>
+		</tr>
+		<tr>
+			<td>11. Ismat</td>
+			<td>23</td>
+			<td style="border-right: none">Berat diucapkan (jauh dari hujung lidah/bibir)</td>
+		</tr>
+	</table>
+
+</details>
+
+<details>
+    <summary id="bgmax">Topik-topik lain</summary>
+
+    <ol>
+        <li><a href="penulisan.html" style="text-decoration: underline dotted blue">➠ Penulisan & pengumpulan Al-Quran</a></li>
+		<li><a href="jibril.html" style="text-decoration: underline dotted blue">➠ Waqaf Jibril</a></li>
+	</ol>
+
+</details>
+
+    </main>
+
+    <footer>
+        <p>Ini ialah catatan seorang <a target="_blank" href="https://facebook.com/baz.li3">hamba Allah</a></p>
+    </footer>
+
+<a href='#' class="stt" title="scroll to top">▲</a>
+
+</body>
+
+</html>
