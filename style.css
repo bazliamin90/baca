@@ -36,7 +36,7 @@ nav ol li a {
 h3 {
     text-align: center;
 }
-p {
+p, ol {
     font-size: 0.9em;
     line-height: 1.5;
     color: gray;
@@ -268,9 +268,40 @@ details {
         background-color: black;
     }
 
-    @media (max-width: 800px) {	
-        .stt {
-            right: 40px;
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+th {
+    color: green;
+    font-size: 0.8em;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+td {
+    color: grey;
+    font-size: 0.8em;
+    border: 1px solid #ddd;
+    padding: 5px;
+    text-align: left;
+}
+
+td:nth-child(1), td:nth-child(2) {
+    background-color: lightyellow; /* Change background color */
+    color: darkblue; /* Change text color */
+}
+
+td ul {
+    padding: 5px 10px;
+    text-align: left;
+}
+
+@media (max-width: 800px) {	
+    .stt {
+        right: 40px;
         }
     }
 
