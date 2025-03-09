@@ -36,11 +36,19 @@ nav ol li a {
 h3 {
     text-align: center;
 }
-p, ol {
+p, ol, ul {
     font-size: 0.9em;
     line-height: 1.5;
     color: gray;
 }
+
+.hukum {
+    background-color: #9ef9e8;
+    font-size: 0.9em;
+    padding: 5px 10px;
+    border-radius: 0 15px 15px 0;
+}
+
 #sub {
     background-color: #fff6e5;
 	max-width: 100%;
@@ -138,13 +146,13 @@ img {
     font-size: 0.9em;;
 }
 [id^="controls"] {
-  display: flex;
-  gap: 10px;
-}
-.audio-container a {
-  color: #007bff;
-  margin-bottom: 10px;
-}
+    display: flex;
+    gap: 10px;
+  }
+  .audio-container a {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
 .playButton, .stopButton, .restartButton {
   font-size: 0.9em;
   cursor: pointer;
@@ -197,6 +205,16 @@ img {
     padding: 5px 10px;
     border-radius: 5px;
     }
+
+    .rumi {
+        color: blue;
+        background-color: white;
+        text-align: center;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid red;
+        }
+
 details {
     interpolate-size: allow-keywords;
     overflow: clip;
