@@ -317,6 +317,36 @@ td ul {
     text-align: left;
 }
 
+.stacked-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.playPauseBtn {
+    padding: 2px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    background: linear-gradient(to right, blue 0%, #f6ff42 0%);
+    transition: background 0.1s linear;
+    color: black;
+    border: none;
+    outline: none;
+    width: 4rem;
+    border-radius: 3px;
+}
+.playPauseBtn.playing {
+    background-color: #f6ff42;
+    color: grey;
+}
+.playPauseBtn.playing:hover {
+    background: linear-gradient(to right, darkblue 0%, #f6ff42 0%);
+}
+.playPauseBtn:not(.playing):hover {
+    color: black;
+}
+
 @media (max-width: 800px) {	
     .stt {
         right: 40px;

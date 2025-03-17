@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="header.js"></script>
-    <script src="scriptaudio.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Tajwid</title>
 </head>
@@ -73,11 +72,13 @@
 <p id="sub">Ringkasan hukum</p>
 <table>
     <tr>
+        <th></th>
         <th>Huruf</th>
         <th>Keadaan</th>
         <th>Hukum</th>
     </tr>
     <tr>
+        <td>1.</td>
         <td>Nun mati / tanwin</td>
         <td>+ huruf hijaiyyah</td>
         <td>
@@ -91,6 +92,7 @@
         </td>
     </tr>
     <tr>
+        <td>2.</td>
         <td>Nun</td>
         <td>bersabdu</td>
         <td>
@@ -100,6 +102,7 @@
         </td>
     </tr>
     <tr>
+        <td>3.</td>
         <td>Mim mati</td>
         <td>+ huruf hijaiyyah</td>
         <td>
@@ -129,9 +132,115 @@
         <a class="rumi">6 hurufnya</a>
     </ul>
 </p>
-<p>✅ Mnemonic hurufnya:</p>
+<p>✅ Mnemonic huruf:
+    <ul style="text-align: left">
+        <a class="qur2">أَغۡحٍ خَعَه</a>
+    </ul>
+</p>
+<p>✅ Contoh:</p>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Huruf</th>
+        <th>Nun sakinah</th>
+        <th>Tanwin</th>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td class="qur2">ء</td>
+        <td>
+            <div class="stacked-content">
+            <a class="qur">ٱسۡكُنۡ أَنتَ</a>
+            <audio class="myAudio">
+                <source src="https://github.com/bazliamin90/audio/raw/main/nunmim/1%20uskun.mp3" type="audio/mpeg">
+            </audio>
+            <button class="playPauseBtn">𝚙𝚕𝚊𝚢</button>
+            </div>
+        </td>
+        <td>
+            <div class="stacked-content">
+            <a class="qur">وَمَتَٰعٌ إِلَىٰ</a>
+            <audio class="myAudio">
+                <source src="https://github.com/bazliamin90/audio/raw/main/nunmim/7%20wamataun.mp3" type="audio/mpeg">
+            </audio>
+            <button class="playPauseBtn">𝚙𝚕𝚊𝚢</button>
+            </div>
+        </td>
+    </tr>
+</table>
 
 <a href="#" class="stt" title="Scroll to top" aria-label="Scroll to top">▲</a>
+
+<script>
+    const audios = document.querySelectorAll('.myAudio');
+    const playPauseBtns = document.querySelectorAll('.playPauseBtn');
+    
+    let currentlyPlayingAudio = null; // Track the currently playing audio
+    
+    function updateButtonGradient(audio, playPauseBtn) {
+        const currentTime = audio.currentTime;
+        const duration = audio.duration;
+        if (!isNaN(duration) && isFinite(duration)) {
+            const percentage = (currentTime / duration) * 100;
+            playPauseBtn.style.background = `linear-gradient(to right, black ${percentage}%, #f6ff42 ${percentage}%)`;
+        }
+    }
+    
+    function resetButton(btn) {
+        btn.textContent = '𝚙𝚕𝚊𝚢';
+        btn.setAttribute('aria-label', 'Play');
+        btn.classList.remove('playing');
+        btn.style.background = `linear-gradient(to right, black 0%, #f6ff42 0%)`;
+    }
+    
+    function stopAudio(audio) {
+        audio.pause(); // Pause the audio
+        audio.currentTime = 0; // Reset the audio to the beginning
+    }
+    
+    playPauseBtns.forEach((btn, index) => {
+        const audio = audios[index];
+    
+        // Initialize gradient
+        btn.style.background = `linear-gradient(to right, black 0%, #f6ff42 0%)`;
+    
+        btn.addEventListener('click', function() {
+            // If another audio is playing, stop it completely and reset its button
+            if (currentlyPlayingAudio && currentlyPlayingAudio !== audio) {
+                stopAudio(currentlyPlayingAudio); // Stop the previously playing audio
+                const currentlyPlayingBtn = playPauseBtns[[...audios].indexOf(currentlyPlayingAudio)];
+                resetButton(currentlyPlayingBtn);
+            }
+    
+            // Toggle play/pause for the clicked audio
+            if (audio.paused) {
+                audio.play();
+                btn.textContent = '𝚙𝚊𝚞𝚜𝚎';
+                btn.setAttribute('aria-label', 'Pause');
+                btn.classList.add('playing');
+                currentlyPlayingAudio = audio; // Update the currently playing audio
+            } else {
+                stopAudio(audio); // Stop the audio completely
+                resetButton(btn);
+                currentlyPlayingAudio = null; // No audio is playing now
+            }
+        });
+    
+        audio.addEventListener('timeupdate', () => updateButtonGradient(audio, btn));
+    
+        audio.addEventListener('ended', function() {
+            resetButton(btn);
+            currentlyPlayingAudio = null; // No audio is playing now
+        });
+    
+        audio.addEventListener('error', () => {
+            console.error('Error loading audio');
+            resetButton(btn);
+            currentlyPlayingAudio = null; // No audio is playing now
+        });
+    });
+    </script>
 
 </body>
 </html>
