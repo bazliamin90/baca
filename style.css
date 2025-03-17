@@ -321,10 +321,14 @@ td ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 5px;
 }
 
-.playPauseBtn {
+.stacked-content a, 
+.stacked-content button {
+    margin-bottom: 10px;
+}
+
+    .playPauseBtn {
     padding: 2px 8px;
     font-size: 12px;
     cursor: pointer;
