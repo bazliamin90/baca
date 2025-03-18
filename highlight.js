@@ -57,3 +57,48 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-e");
+
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 4) + 
+                '<span class="highlight">' + text.slice(4, 10) + '</span>' + 
+                text.slice(10);
+            element.innerHTML = newText;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-f");
+
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 2) + 
+                '<span class="highlight">' + text.slice(2, 7) + '</span>' + 
+                text.slice(7);
+            element.innerHTML = newText;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-g");
+
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 3) + 
+                '<span class="highlight">' + text.slice(3, 10) + '</span>' + 
+                text.slice(10);
+            element.innerHTML = newText;
+        }
+    });
+});
