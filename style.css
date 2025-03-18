@@ -351,6 +351,11 @@ td ul {
     color: black;
 }
 
+.highlight {
+    color: red;
+  }
+  
+
 @media (max-width: 800px) {	
     .stt {
         right: 40px;
