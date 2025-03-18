@@ -328,6 +328,13 @@ td ul {
     margin-bottom: 10px;
 }
 
+.side-by-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
     .playPauseBtn {
     padding: 2px 8px;
     font-size: 12px;

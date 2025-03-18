@@ -102,3 +102,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-h");
+
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 2) + 
+                '<span class="highlight">' + text.slice(2, 6) + '</span>' + 
+                text.slice(6);
+            element.innerHTML = newText;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-i");
+
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 6) + 
+                '<span class="highlight">' + text.slice(6, 11) + '</span>' + 
+                text.slice(11);
+            element.innerHTML = newText;
+        }
+    });
+});
