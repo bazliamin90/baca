@@ -42,3 +42,48 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-d");
+
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 0) + 
+                '<span class="highlight">' + text.slice(0, 7) + '</span>' + 
+                text.slice(7);
+            element.innerHTML = newText;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-e");
+
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 0) + 
+                '<span class="highlight">' + text.slice(0, 6) + '</span>' + 
+                text.slice(6);
+            element.innerHTML = newText;
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-f");
+
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 12) + 
+                '<span class="highlight">' + text.slice(12, 18) + '</span>' + 
+                text.slice(18);
+            element.innerHTML = newText;
+        }
+    });
+});
