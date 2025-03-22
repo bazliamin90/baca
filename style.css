@@ -47,6 +47,19 @@ p, ol, ul {
     font-size: 0.9em;
     padding: 5px 10px;
     border-radius: 0 15px 15px 0;
+    line-height: 2;
+}
+
+.hukum2 {
+    font-size: 0.9em;
+    color: gray;
+    background-color: rgb(232, 255, 255);
+    padding: 5px 5px;
+    display: inline-block;
+    border: 10px solid;
+    border-image-source: url('border.png');
+    border-image-slice: 40;
+    border-image-repeat: repeat;
 }
 
 #sub {
