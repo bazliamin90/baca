@@ -206,14 +206,23 @@ img {
     border-radius: 5px;
     }
 
-    .rumi {
-        color: blue;
-        background-color: white;
-        text-align: center;
-        padding: 5px 10px;
-        border-radius: 5px;
-        border: 1px solid red;
-        }
+.rumi {
+    color: blue;
+    background-color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid red;
+    }
+
+.rumi2 {
+    color: black;
+    background-color: #baffc7;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    line-height: 2;
+}
 
 details {
     interpolate-size: allow-keywords;

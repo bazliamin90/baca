@@ -163,7 +163,12 @@ ol li {
   <ol id="list">
     <li><a href="about.html">About</a></li>
 	<hr><b>Topik</b><hr class="hrnone">
-	  <li><a href="002-ntm.html">Nun, tanwin, mim</a></li>
+	  <li><a>Mad</a>
+      <ul>
+      <li><a href="003-mad01.html">Tahap mad far'i</a></li>
+      </ul>  
+    </li>
+    <li><a href="002-ntm.html">Nun, tanwin, mim</a></li>
     <li><a href="index.html">Waqaf Jibril</a></li>
   <hr><b>Nota tambahan</b><hr class="hrnone">
     <li><a href="https://bazliamin90.github.io/bukutajwid" target="_blank">Buku tajwid</a></li>
