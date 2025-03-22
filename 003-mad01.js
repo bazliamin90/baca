@@ -87,3 +87,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".h-g").forEach(element => {
+        let text = element.textContent.trim();
+        if (text.length >= 1) { // Ensure text is long enough to avoid errors
+            element.innerHTML =
+                text.slice(0, 26) +
+                '<span class="highlight">' + text.slice(26, 30) + '</span>' +
+                text.slice(30, 50) +
+                '<span class="highlight">' + text.slice(50, 54) + '</span>' +
+                text.slice(54);
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".h-h").forEach(element => {
+        let text = element.textContent.trim();
+        if (text.length >= 1) { // Ensure text is long enough to avoid errors
+            element.innerHTML =
+                text.slice(0, 2) +
+                '<span class="highlight">' + text.slice(2, 7) + '</span>' +
+                text.slice(7, 29) +
+                '<span class="highlight">' + text.slice(29, 33) + '</span>' +
+                text.slice(33);
+        }
+    });
+});
