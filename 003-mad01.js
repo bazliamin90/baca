@@ -150,4 +150,44 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".h-k").forEach(element => {
+        let text = element.textContent.trim();
+        if (text.length >= 1) { // Ensure text is long enough to avoid errors
+            element.innerHTML =
+                text.slice(0, 6) +
+                '<span class="highlight">' + text.slice(6, 10) + '</span>' +
+                text.slice(10, 29) +
+                '<span class="highlight">' + text.slice(29, 34) + '</span>' +
+                text.slice(34);
+        }
+    });
+});
 
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".h-l").forEach(element => {
+        let text = element.textContent.trim();
+        if (text.length >= 1) { // Ensure text is long enough to avoid errors
+            element.innerHTML =
+                text.slice(0, 12) +
+                '<span class="highlight">' + text.slice(12, 17) + '</span>' +
+                text.slice(17, 60) +
+                '<span class="highlight">' + text.slice(60, 65) + '</span>' +
+                text.slice(65);
+        }
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    let elements = document.querySelectorAll(".h-m");
+    elements.forEach(element => {
+        let text = element.innerText;
+        if (text.length >= 1) {
+            let newText = 
+                text.slice(0, 8) + 
+                '<span class="highlight">' + text.slice(8, 19) + '</span>' + 
+                text.slice(19);
+            element.innerHTML = newText;
+        }
+    });
+});
