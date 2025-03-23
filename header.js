@@ -78,7 +78,7 @@ headerTemplate3.innerHTML = `
     padding: 5px;
     margin-bottom: 10px;
     font-family: monospace;
-		   font-size: 12px;
+		font-size: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     }
@@ -106,6 +106,11 @@ headerTemplate3.innerHTML = `
 
 ol li {
     text-align: left;
+}
+
+.li2 {
+    font-size: 12px;
+    padding: 5px 0 5px 20px; /* Remove extra padding */
 }
 
   #overlay {
@@ -164,8 +169,8 @@ ol li {
     <li><a href="about.html">About</a></li>
 	<hr><b>Topik</b><hr class="hrnone">
 	  <li><a>Mad</a>
-      <ul>
-      <li><a href="003-mad01.html">Tahap mad far'i</a></li>
+      <ul class="li2">
+          <li><a href="003-mad01.html">Tahap mad far'i</a></li>
       </ul>  
     </li>
     <li><a href="002-ntm.html">Nun, tanwin, mim</a></li>
