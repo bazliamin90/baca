@@ -191,3 +191,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".h-n").forEach(element => {
+        let text = element.textContent.trim();
+        if (text.length >= 1) { // Ensure text is long enough to avoid errors
+            element.innerHTML =
+                text.slice(0, 25) +
+                '<span class="highlight">' + text.slice(25, 32) + '</span>' +
+                text.slice(32, 51) +
+                '<span class="highlight">' + text.slice(51, 57) + '</span>' +
+                text.slice(57);
+        }
+    });
+});
