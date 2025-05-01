@@ -42,6 +42,14 @@ p, ol, ul {
     color: gray;
 }
 
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin: 15px 0;
+}
+
 .hukum {
     background-color: #9ef9e8;
     font-size: 0.9em;
@@ -251,7 +259,7 @@ img {
 }
 
 .rumi3 {
-    font-size: 0.7em;
+    font-size: 11px;
     color: gray;
 }
 
@@ -345,11 +353,6 @@ td {
     border: 1px solid #ddd;
     padding: 5px;
     text-align: left;
-}
-
-td:nth-child(1), td:nth-child(2) {
-    background-color: lightyellow; /* Change background color */
-    color: darkblue; /* Change text color */
 }
 
 td ul {
