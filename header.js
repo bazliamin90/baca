@@ -168,7 +168,8 @@ ol li {
   <ol id="list">
     <li><a href="about.html">About</a></li>
 	<hr><b>Topik</b><hr class="hrnone">
-	  <li><a>Mad</a>
+	  <li><a href="006-nabr.html">An-nabr</a></li>
+    <li><a>Mad</a>
       <ul class="li2">
           <li><a href="003-mad01.html">Tahap mad far'i</a></li>
       </ul>  

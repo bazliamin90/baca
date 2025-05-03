@@ -353,6 +353,7 @@ td {
     border: 1px solid #ddd;
     padding: 5px;
     text-align: left;
+    vertical-align: top;
 }
 
 td ul {
