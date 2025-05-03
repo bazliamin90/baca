@@ -166,7 +166,7 @@ ol li {
     aria-label="Search list items"
   />
   <ol id="list">
-    <li><a href="about.html">About</a></li>
+    <li><a href="index.html">About</a></li>
 	<hr><b>Topik</b><hr class="hrnone">
 	  <li><a href="006-nabr.html">An-nabr</a></li>
     <li><a>Mad</a>
