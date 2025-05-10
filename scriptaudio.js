@@ -69,6 +69,15 @@ function setupAudioControls(audioId, playButtonId, stopButtonId, sliderId, timeD
     updateDisplay();
   });
 
+  audio.addEventListener('ended', () => {
+    playButton.textContent = '▶';
+    slider.value = 0;
+    updateDisplay();
+    if (currentlyPlayingAudio === audio && !isLooping) {
+      currentlyPlayingAudio = null;
+    }
+  });  
+
   function updateDisplay() {
     const current = formatTime(audio.currentTime);
     const duration = formatTime(audio.duration);
