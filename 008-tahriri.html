@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="header.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>My Tahriri</title>
+</head>
+<body>
+<header3-component></header3-component>
+
+<div class="game-container">
+<h3>My Tahriri</h3>
+
+<main>
+    <div class="centered">
+        <label for="image-selector">Muka surat:</label>
+        <select id="image-selector">
+            <!-- JavaScript will populate these options -->
+        </select>
+    </div>
+        
+    <div class="viewer">
+        <img id="displayedImage" src="" alt="Selected Image">
+    </div>
+	
+	<div id="controls">
+		<button id="prevBtn"><img src="prev.svg" alt="previous"></button>
+		<button id="nextBtn"><img src="next.svg" alt="next"></button>
+		<button id="zoomInBtn"><img src="zoomin.svg" alt="zoom in"></button>
+		<button id="zoomOutBtn"><img src="zoomout.svg" alt="zoom out"></button>
+	</div>
+</main>
+
+<div class="center">
+    <p><a class="qur3">وَٱللَّهُ أَعۡلَمُ بِٱلـصَّـوَابِ</a></p>
+</div>
+
+<a href="#" class="stt" title="Scroll to top" aria-label="Scroll to top">▲</a>
+
+</body>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+        const imageSelector = document.getElementById('image-selector');
+        const imageContainer = document.getElementById('displayedImage');
+        const previousButton = document.getElementById('prevBtn');
+        const nextButton = document.getElementById('nextBtn');
+
+        const startImageIndex = 1;
+        const endImageIndex = 604;
+        let currentImageIndex = startImageIndex;
+        
+        // Populate the dropdown with options
+        for (let i = startImageIndex; i <= endImageIndex; i++) {
+            const option = document.createElement('option');
+            option.value = i;
+            option.textContent = `${i}`;
+            imageSelector.appendChild(option);
+        }
+
+        // Set the default selected value and display the first image by default
+        imageSelector.value = startImageIndex;
+        updateImage(startImageIndex);
+
+        // Event listener to display the selected image
+        imageSelector.addEventListener('change', function() {
+            const selectedValue = parseInt(this.value);
+            currentImageIndex = selectedValue;
+            updateImage(selectedValue);
+        });
+
+        // Event listener for the Previous button
+        previousButton.addEventListener('click', function() {
+            if (currentImageIndex > startImageIndex) {
+                currentImageIndex--;
+                updateImage(currentImageIndex);
+                imageSelector.value = currentImageIndex;
+            }
+        });
+
+        // Event listener for the Next button
+        nextButton.addEventListener('click', function() {
+            if (currentImageIndex < endImageIndex) {
+                currentImageIndex++;
+                updateImage(currentImageIndex);
+                imageSelector.value = currentImageIndex;
+            }
+        });
+
+        // Update the displayed image and button states
+        function updateImage(index) {
+            imageContainer.src = `https://github.com/bazliamin90/img/blob/main/tahriri/${index}.jpg?raw=true`;
+            imageContainer.alt = `muka surat ${index} belum ada`;
+            updateButtons(index);
+        }
+
+        // Update the states of Previous and Next buttons
+        function updateButtons(index) {
+            previousButton.disabled = index <= startImageIndex;
+            nextButton.disabled = index >= endImageIndex;
+        }
+    });
+	
+	<!---------------->
+
+  const displayedImage = document.getElementById("displayedImage");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  // Update displayed image based on the current index
+  function updateImage() {
+    displayedImage.src = images[currentIndex];
+  }
+
+  // Event listeners for buttons
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length; // Loop back to last image
+    updateImage();
+  });
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length; // Loop back to first image
+    updateImage();
+  });
+  
+  // Add click event listeners to images in the container
+const thumbnails = document.querySelectorAll(".container img");
+
+thumbnails.forEach((thumbnail, index) => {
+  thumbnail.addEventListener("click", () => {
+    currentIndex = index; // Update currentIndex to the clicked image's index
+    updateImage(); // Update the viewer to display the clicked image
+  });
+});
+let zoomLevel = 1; // Initial zoom level
+const zoomStep = 0.5; // How much to zoom in/out on each button click
+const maxScale = 4; // Maximum zoom level
+const minScale = 1; // Minimum zoom level (original size)
+
+// Function to update the zoom level
+function updateZoom() {
+  // Ensure the zoom level is within the defined limits
+  if (zoomLevel > maxScale) {
+    zoomLevel = maxScale;
+  } else if (zoomLevel < minScale) {
+    zoomLevel = minScale;
+  }
+
+  displayedImage.style.transform = `scale(${zoomLevel})`; // Apply zoom effect
+}
+
+// Zoom In functionality
+const zoomInBtn = document.getElementById('zoomInBtn');
+zoomInBtn.addEventListener('click', () => {
+  zoomLevel += zoomStep; // Increase zoom level
+  updateZoom(); // Apply zoom effect
+});
+
+// Zoom Out functionality
+const zoomOutBtn = document.getElementById('zoomOutBtn');
+zoomOutBtn.addEventListener('click', () => {
+  if (zoomLevel > minScale) {
+    zoomLevel -= zoomStep; // Decrease zoom level
+    updateZoom(); // Apply zoom effect
+  }
+});
+
+// Reset zoom when clicking outside of the image
+document.addEventListener("click", (event) => {
+  if (!displayedImage.contains(event.target) && !document.getElementById('controls').contains(event.target)) {
+    zoomLevel = 1; // Reset to original size
+    updateZoom(); // Apply zoom effect to reset the zoom
+  }
+});
+</script>
+
+</html>

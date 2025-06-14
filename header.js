@@ -167,6 +167,7 @@ ol li {
   />
   <ol id="list">
     <li><a href="index.html">About</a></li>
+    <li><a href="008-tahriri.html">My Tahriri</a></li>
 	<hr><b>Topik</b><hr class="hrnone">
 	  <li><a href="006-nabr.html">An-nabr</a></li>
     <li><a href="007-hafs.html">Bacaan khusus Hafs-Syatibi</a></li>
