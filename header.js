@@ -4,18 +4,11 @@ headerTemplate3.innerHTML = `
 <style>
 	.header {
 		display: flex;
-		margin: 0 auto;
-		border-bottom: 5px solid #ccc;
-		background-color:rgb(154, 253, 255);
-		position: sticky;
-		top: 0;
-		max-width: 600px;
-		z-index: 1000; /* Ensure it appears above other content */
 	}
 	
 	.menu {
 		max-width: 20px;
-		border: 1px solid #ccc;
+		border: 2px solid black;
 		background-color: white;
 		border-radius: 4px;
 		margin: 5px 10px;
@@ -133,10 +126,6 @@ ol li {
   }
 
 	@media (max-width: 600px) {
-		.header {
-			border: none;
-			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-		}
 		h1 {
 			width: 100%;
 		}

@@ -9,6 +9,22 @@ body {
     margin: 0 auto;
     overflow-y: scroll;
 }
+
+.header-container {
+    display: flex;
+	margin: 0 auto;
+    background-color: #f0f0f0;
+    position: sticky;
+	top: 0;
+    width: 90%;
+    max-width: 900px;
+    padding: 5px 10px;
+    background: #68fff2;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+}
+
 nav ol {
     display: flex;
     flex-wrap: wrap; /* Allows wrapping to a new line if space is limited */
@@ -86,7 +102,8 @@ img {
     display: flex;
 }
 .game-container {
-    max-width: 580px;
+    width: 90%;
+    max-width: 900px;
     margin: 30px auto;
     padding: 10px;
     background: #fff;
@@ -568,8 +585,15 @@ td ul {
     }
 
 @media screen and (max-width: 500px) {
+    .header-container {
+        margin: 0;
+        padding: 0; 
+        width: 100%;
+        border: none;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
     .blank input {
-    font-size: 12px;
+        font-size: 12px;
     }
     .game-container {
         max-width: 85%;
