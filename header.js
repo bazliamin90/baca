@@ -41,7 +41,8 @@ headerTemplate3.innerHTML = `
     top: 35%; /* Adjust to desired vertical placement */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
-    width: 70%;
+    width: 80%;
+    max-width: 800px;
     height: 250px;
     border: 3px solid black;
     padding: 10px;
@@ -112,7 +113,7 @@ ol li {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
     z-index: 999; /* One level below the scroll box */
     }
