@@ -334,6 +334,15 @@ input[type="range"] {
     padding: 5px;
 }
 
+.rumi5 {
+    color: black;
+    background-color: #c9effa;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    line-height: 2;
+}
+
 details {
     interpolate-size: allow-keywords;
     overflow: clip;
@@ -409,6 +418,7 @@ table {
     width: 100%;
     margin: 0 auto;
     border-collapse: collapse;
+    table-layout : fixed;
 }
 
 th {
@@ -416,6 +426,7 @@ th {
     font-size: 0.8em;
     border: 1px solid #ddd;
     padding: 5px;
+    text-align: center;
 }
 
 td {
