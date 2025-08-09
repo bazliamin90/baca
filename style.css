@@ -21,6 +21,7 @@ body {
     padding: 5px 10px;
     background: #68fff2;
     border-radius: 0 0 10px 10px;
+    border: 1px solid #ccc;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 	z-index: 1000;
 }
@@ -55,7 +56,7 @@ h3 {
 p, ol, ul {
     font-size: 0.9em;
     line-height: 1.5;
-    color: gray;
+    color: #555;
 }
 
 ul, ol {
@@ -106,10 +107,24 @@ img {
     max-width: 900px;
     margin: 30px auto;
     padding: 10px;
+    border: 1px solid #ccc;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+.container2 {
+    width: 90%;
+    max-width: 900px;
+    height: 80vh;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 #questions-list {
     font-size: 0.9em;
     padding: 0 20px;
@@ -607,8 +622,15 @@ td ul {
         font-size: 12px;
     }
     .game-container {
-        max-width: 85%;
+        max-width: 100%;
     }
+
+    .container2 {
+        max-width: 100%;
+        height: 80vh;
+        margin-bottom: 0;
+    }
+
     nav {
         margin: 0 auto;
     }
