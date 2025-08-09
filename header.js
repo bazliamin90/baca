@@ -45,7 +45,7 @@ headerTemplate3.innerHTML = `
 		max-width: 80%;
 		border-right: 3px solid black;
 		padding: 10px;
-		background-color: #f9f9f9;
+		background-color: white;
 		overflow-y: auto;
 		box-shadow: 2px 0 6px rgba(0, 0, 0, 0.2);
 		transition: transform 0.3s ease;
@@ -72,7 +72,7 @@ headerTemplate3.innerHTML = `
 		margin-bottom: 10px;
 		font-family: monospace;
 		font-size: 12px;
-		border: 1px solid #ccc;
+		border: 1px solid blue;
 		border-radius: 4px;
 	}
 
@@ -89,7 +89,7 @@ headerTemplate3.innerHTML = `
 		font-family: monospace;
 		text-decoration: underline #ccc dotted;
 		text-underline-offset: 3px;
-		color: black;
+		color: #555;
 	}
 
 	.scroll-box li {
@@ -156,7 +156,6 @@ headerTemplate3.innerHTML = `
     aria-label="Search list items"
   />
   <ol id="list">
-	<li><a href="test.html">Test</a></li>  
     <li><a href="index.html">About</a></li>
     <li><a href="008-tahriri.html">My Tahriri</a></li>
 	<hr><b>Topik</b><hr class="hrnone">
@@ -169,7 +168,8 @@ headerTemplate3.innerHTML = `
     </li>
     <li><a href="002-ntm.html">Nun, tanwin, mim</a></li>
     <li><a href="004-sakinain.html">Pertemuan dua sukun</a></li>
-    <li><a href="005-tafnis.html">Tafkhim nisbi</a></li>
+    <li><a href="010-ra.html">Ra tebal nipis (tafkhim tarqiq)</a></li>
+	<li><a href="005-tafnis.html">Tafkhim nisbi</a></li>
     <li><a href="009-waqaf.html">Waqaf</a></li>
     <li><a href="001-wj.html">Waqaf Jibril</a></li>
 	<hr><b>Nota tambahan</b><hr class="hrnone">
