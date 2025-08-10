@@ -26,7 +26,7 @@ body {
 	z-index: 1000;
 }
 
-ol li::marker {
+ol li::marker, ul li::marker {
    color: red; 
 }
 
@@ -657,7 +657,7 @@ td ul {
 		width: 10px;
         padding: 2px 5px;
 	}
-    p, th, td, ol, li, ol li ol li {
+    p, th, td, ol, ul, li, ol li ol li {
         font-size: 12px;
     }
 }
