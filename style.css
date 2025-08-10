@@ -448,6 +448,7 @@ table {
 
 th {
     color: green;
+    background-color: #f1ffc7;
     font-size: 14px;
     border: 1px solid #ddd;
     padding: 5px;
