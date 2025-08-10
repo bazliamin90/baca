@@ -614,6 +614,10 @@ td ul {
         margin: 10px auto;
     }
 
+.red-letter {
+  color: red;
+}
+
 @media (max-width: 800px) {	
     .stt {
         right: 40px;
