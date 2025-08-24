@@ -172,9 +172,10 @@ headerTemplate3.innerHTML = `
 	<li><a href="005-tafnis.html">Tafkhim nisbi</a></li>
     <li><a href="009-waqaf.html">Waqaf</a></li>
     <li><a href="001-wj.html">Waqaf Jibril</a></li>
-	<hr><b>Nota tambahan</b><hr class="hrnone">
+	<hr><b>Bahan tambahan</b><hr class="hrnone">
     <li><a href="https://bazliamin90.github.io/bukutajwid" target="_blank">Buku tajwid</a></li>
-  </ol>
+	<li><a href="011-pdf.html">Perbandingan Syatibi & Jazari</a></li>
+	</ol>
 </div>
 `;
 
