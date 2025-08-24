@@ -107,10 +107,14 @@
     let pdfDoc = null;
 
     eventBus.on("pagesinit", () => {
-      viewer.currentScaleValue = "auto";
-      document.getElementById("pageCount").textContent = "/ " + pdfDoc.numPages;
-      document.getElementById("pageInput").max = pdfDoc.numPages;
-    });
+  if (window.innerWidth < 768) {
+    viewer.currentScaleValue = "page-width"; // phones/tablets
+  } else {
+    viewer.currentScaleValue = "auto";       // desktops
+  }
+  document.getElementById("pageCount").textContent = "/ " + pdfDoc.numPages;
+  document.getElementById("pageInput").max = pdfDoc.numPages;
+});
 
     eventBus.on("pagechanging", (e) => {
       document.getElementById("pageInput").value = e.pageNumber;
