@@ -175,6 +175,7 @@ headerTemplate3.innerHTML = `
 	<hr><b>Bahan tambahan</b><hr class="hrnone">
     <li><a href="https://bazliamin90.github.io/bukutajwid" target="_blank">Buku tajwid</a></li>
 	<li><a href="011-pdf.html">Perbandingan Syatibi & Jazari</a></li>
+	<li><a href="012-pdf.html">BMJ CR: OCD</a></li>
 	</ol>
 </div>
 `;
