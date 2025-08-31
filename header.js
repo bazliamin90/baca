@@ -172,10 +172,11 @@ headerTemplate3.innerHTML = `
 	<li><a href="005-tafnis.html">Tafkhim nisbi</a></li>
     <li><a href="009-waqaf.html">Waqaf</a></li>
     <li><a href="001-wj.html">Waqaf Jibril</a></li>
-	<hr><b>Bahan tambahan</b><hr class="hrnone">
-    <li><a href="https://bazliamin90.github.io/bukutajwid" target="_blank">Buku tajwid</a></li>
+	<hr><b>Bacaan Pelbagai</b><hr class="hrnone">
+    <li><a href="012-pdf.html">BMJ CR: OCD</a></li>
+	<li><a href="https://bazliamin90.github.io/bukutajwid" target="_blank">Buku tajwid</a></li>
+	<li><a href="013-pdf.html">Kerasulan Nabi Yahya & Isa</a></li>
 	<li><a href="011-pdf.html">Perbandingan Syatibi & Jazari</a></li>
-	<li><a href="012-pdf.html">BMJ CR: OCD</a></li>
 	</ol>
 </div>
 `;
