@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  /* Yellow dotted background */
+  background-color: #f9db5c;
+  background-image: radial-gradient(#d5b646 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* Wrapper for full white box */
+.wrapper {
+  width: 85%;
+  max-width: 900px;
+  margin: 50px auto;
+  position: relative;
+}
+
+/* Title box (slanted black bar) */
+.title-box {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg) skewX(-15deg);   /* <-- parallelogram */
+  background: black;
+  padding: 8px 20px;
+  width: 300px;
+  max-width: 70%;
+  text-align: center;
+}
+
+.title-text {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+/* Main white content box */
+.content-box {
+  background: white;
+  border: 4px solid black;
+  padding: 30px 20px;
+  box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.322);
+}
+
+h2 {
+  margin-top: 30px;
+  font-weight: 900;
+}
+
+/* List styling */
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  margin-bottom: 6px;
+}
+
+/* Round numbered icons */
+.num {
+  background: black;
+  color: yellow;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.2em;        /* scales with font size */
+  aspect-ratio: 1 / 1; /* ALWAYS a perfect circle */
+  border-radius: 50%;
+  margin-right: 12px;
+  font-size: 1em;      /* keeps number size stable */
+}

@@ -8,6 +8,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0 auto;
     overflow-y: scroll;
+    background-color: rgb(255, 255, 151); /* background color */
+    background-image: radial-gradient(#ffce0a49 3px, transparent 1px); /* grey dots */
+    background-size: 20px 20px; /* spacing */
 }
 
 .header-container {

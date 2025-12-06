@@ -242,8 +242,6 @@ h1 a:hover {
 	<li><a href="013-pdf.html">Kerasulan Nabi Yahya & Isa</a></li>
 	<li><a href="011-pdf.html">Perbandingan Syatibi & Jazari</a></li>
 	</ol>
-
-	<div class="fade-bottom"></div>
 </div>
 `;
 
