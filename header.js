@@ -74,9 +74,9 @@ h1 a:hover {
 /* === Scroll Box === */
 .scroll-box {
     position: fixed;
-    top: 5vh;
+    top: 10px;
     left: 0;
-    height: 80vh;
+    height: 70vh;
     width: 260px;
     max-width: 90%;
     border-right: 3px solid #b3aaff;
