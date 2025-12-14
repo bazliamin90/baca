@@ -195,6 +195,16 @@ h1 a:hover {
 
 /* === Responsive Mobile Adjustment === */
 @media (max-width: 600px) {
+    .header {
+    padding: 4px 0;
+	width: 100%;
+    border-radius: 0;
+    }
+
+    .menu {
+        margin-left: 8px;
+    }
+
     .scroll-box {
         width: 75%;
     }
@@ -233,7 +243,8 @@ h1 a:hover {
     <li><a href="002-ntm.html">Nun, tanwin, mim</a></li>
     <li><a href="004-sakinain.html">Pertemuan dua sukun</a></li>
     <li><a href="010-ra.html">Ra tebal nipis (tafkhim tarqiq)</a></li>
-	<li><a href="005-tafnis.html">Tafkhim nisbi</a></li>
+	<li><a href="014.html">Seminar: makhraj & sifat</a></li>
+    <li><a href="005-tafnis.html">Tafkhim nisbi</a></li>
     <li><a href="009-waqaf.html">Waqaf</a></li>
     <li><a href="001-wj.html">Waqaf Jibril</a></li>
 	<hr><b>Bacaan Pelbagai</b><hr class="hrnone">

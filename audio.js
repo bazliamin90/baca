@@ -4,11 +4,30 @@ document.addEventListener("DOMContentLoaded", () => {
 
   players.forEach(player => {
 
-    const audio   = player.querySelector("audio");
-    const playBtn = player.querySelector(".playBtn");
-    const stopBtn = player.querySelector(".stopBtn");
-    const loopBtn = player.querySelector(".loopBtn");
-    const timeEl  = player.querySelector(".time");
+    /* ===============================
+       1️⃣ Build player HTML dynamically
+       =============================== */
+    const src = player.dataset.src;
+
+    player.innerHTML = `
+      <audio src="${src}"></audio>
+      <div class="controls">
+        <button class="playBtn">▶</button>
+        <button class="stopBtn">⏹</button>
+        <button class="loopBtn">∞</button>
+        <span class="time">0:00/0:00</span>
+      </div>
+      <input type="range" class="progress" min="0" value="0" step="0.1">
+    `;
+
+    /* ===============================
+       2️⃣ Get elements
+       =============================== */
+    const audio    = player.querySelector("audio");
+    const playBtn  = player.querySelector(".playBtn");
+    const stopBtn  = player.querySelector(".stopBtn");
+    const loopBtn  = player.querySelector(".loopBtn");
+    const timeEl   = player.querySelector(".time");
     const progress = player.querySelector(".progress");
 
     function formatTime(sec) {
@@ -18,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
       return `${m}:${s}`;
     }
 
-    // ▶ Play / Pause (only one audio at a time)
+    /* ===============================
+       ▶ Play / Pause (ONE at a time)
+       =============================== */
     playBtn.addEventListener("click", () => {
 
       document.querySelectorAll(".audio-player audio").forEach(other => {
@@ -40,49 +61,57 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
 
-    // ⏹ Stop
+    /* ===============================
+       ⏹ Stop
+       =============================== */
     stopBtn.addEventListener("click", () => {
       audio.pause();
       audio.currentTime = 0;
+      progress.value = 0;
       playBtn.textContent = "▶";
     });
 
-    // 🔁 Loop toggle
+    /* ===============================
+       🔁 Loop toggle
+       =============================== */
     loopBtn.addEventListener("click", () => {
       audio.loop = !audio.loop;
       loopBtn.classList.toggle("active", audio.loop);
     });
 
-    // ⏱ Time update
+    /* ===============================
+       ⏱ Metadata loaded
+       =============================== */
+    audio.addEventListener("loadedmetadata", () => {
+      progress.max = audio.duration;
+      timeEl.textContent =
+        `0:00/${formatTime(audio.duration)}`;
+    });
+
+    /* ===============================
+       ⏱ Time update
+       =============================== */
     audio.addEventListener("timeupdate", () => {
-  if (!isNaN(audio.duration)) {
-    progress.max = audio.duration;
-    progress.value = audio.currentTime;
-  }
+      if (!isNaN(audio.duration)) {
+        progress.value = audio.currentTime;
+      }
 
-  timeEl.textContent =
-    `${formatTime(audio.currentTime)}/${formatTime(audio.duration)}`;
-});
+      timeEl.textContent =
+        `${formatTime(audio.currentTime)}/${formatTime(audio.duration)}`;
+    });
 
-    // ⏱ Seek audio
+    /* ===============================
+       ⏱ Seek audio
+       =============================== */
     progress.addEventListener("input", () => {
-  audio.currentTime = progress.value;
-});
+      audio.currentTime = progress.value;
+    });
 
-stopBtn.addEventListener("click", () => {
-  audio.pause();
-  audio.currentTime = 0;
-  progress.value = 0;
-  playBtn.textContent = "▶";
-});
-
-audio.addEventListener("ended", () => {
-  progress.value = 0;
-  playBtn.textContent = "▶";
-});
-
-    // Reset UI on end
+    /* ===============================
+       🔚 Reset UI on end
+       =============================== */
     audio.addEventListener("ended", () => {
+      progress.value = 0;
       playBtn.textContent = "▶";
     });
 
