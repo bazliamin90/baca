@@ -35,7 +35,8 @@ style.textContent = `
   }
 
   .toc-list li {
-    margin: 6px 0;
+    margin: 6px 4px;
+    font-size: clamp(11px, 2.5vw, 15px);
   }
 
   .toc-link {
